@@ -8,5 +8,6 @@ Run:
 Usage:
 
 `./tsp_solver`
+
 `./tsp_solver <test filenames>`
 
