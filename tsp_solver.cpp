@@ -423,23 +423,36 @@ public:
     }
 };
 
-int main() {
+int main(int argc, char *argv[]) {
     TSPSolver solver;
-    
-    // You can change the filename here for different datasets
-    vector<string> testFiles = {"test.tsp", "xql662.tsp", "a280.tsp", "kz9976.tsp", "mona-lisa100K.tsp"};
-    
+    vector<string> testFiles;
+
+    if (argc <= 1) {
+        // Default test files if no arguments provided
+        testFiles = {
+	    "datasets/test.tsp",
+	    "datasets/xql662.tsp",
+	    "datasets/a280.tsp",
+	    "datasets/kz9976.tsp",
+	    "datasets/mona-lisa100K.tsp"
+	};
+    } else {
+        // Convert command line arguments to strings
+        testFiles.assign(argv + 1, argv + argc);
+    }
+
     for (const string& filename : testFiles) {
         cout << "\n" << string(50, '=') << endl;
         cout << "Testing with: " << filename << endl;
         cout << string(50, '=') << endl;
-        
+
         if (solver.loadTSP(filename)) {
             solver.runExperiments();
         } else {
             cout << "Skipping " << filename << " (file not found)" << endl;
         }
     }
-    
+
     return 0;
 }
+
