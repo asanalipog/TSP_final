@@ -1,5 +1,13 @@
-# TSP_final
+## TSP_final
 
-make by g++ -O2 -o tsp_solver tsp_solver.cpp
-then run with ./tsp_solver
-you can change files you want to check main function
+Run:
+
+`g++ -O2 -Wall -o tsp_solver tsp_solver.cpp`
+
+
+Usage:
+
+`./tsp_solver`
+
+`./tsp_solver <test filenames>`
+
