@@ -2,7 +2,7 @@
 
 Run:
 
-`g++ -O2 -Wall -o tsp_solver tsp_solver.cpp`
+`g++ -O2 -Wall -o tsp_solver.exe tsp_solver.cpp`
 
 
 Usage:
