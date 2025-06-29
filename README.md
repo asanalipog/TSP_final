@@ -7,7 +7,7 @@ Run:
 
 Usage:
 
-`./tsp_solver`
+`./tsp_solver.exe`
 
-`./tsp_solver <test filenames>`
+`./tsp_solver.exe <test filenames>`
 
