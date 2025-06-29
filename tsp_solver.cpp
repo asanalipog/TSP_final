@@ -217,7 +217,7 @@ public:
     auto sqrtLookaheadAlgo() -> vector<int> {
         cout << "Running Sqrt-N Lookahead algorithm..." << endl;
         
-        int lookaheadSize = max(1, (int) sqrt(num_cities));
+        int lookaheadSize = max(1, (int)sqrt(num_cities));
         cout << "  Lookahead size: " << lookaheadSize << " cities" << endl;
         
         vector<int> tour;
@@ -237,7 +237,7 @@ public:
             }
             
             sort(candidates.begin(), candidates.end());
-            int actualLookahead = min(lookaheadSize, (int) candidates.size());
+            int actualLookahead = min(lookaheadSize, (int)candidates.size());
             
             double bestScore = numeric_limits<double>::max();
             int bestCity = -1;
