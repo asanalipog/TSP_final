@@ -382,11 +382,11 @@ auto main(int argc, char *argv[]) -> int {
 
     if (argc <= 1) {
         testFiles = {
-                "datasets/test.tsp",
-                "datasets/xql662.tsp",
-                "datasets/a280.tsp",
-                "datasets/kz9976.tsp",
-                "datasets/mona-lisa100K.tsp"
+            "datasets/test.tsp",
+            "datasets/xql662.tsp",
+            "datasets/a280.tsp",
+            "datasets/kz9976.tsp",
+            "datasets/mona-lisa100K.tsp"
         };
     } else {
         testFiles.assign(argv + 1, argv + argc);
