@@ -1,0 +1,13 @@
+# CLion IDE settings
+.idea/
+*.iml
+
+# Compiled object files and binaries
+*.exe
+
+# Backup and temporary files
+*~
+*.swp
+*.swo
+.DS_Store
+Thumbs.db

@@ -2,12 +2,12 @@
 
 Run:
 
-`g++ -O2 -Wall -o tsp_solver tsp_solver.cpp`
+`g++ -O2 -Wall -o tsp_solver.exe tsp_solver.cpp`
 
 
 Usage:
 
-`./tsp_solver`
+`./tsp_solver.exe`
 
-`./tsp_solver <test filenames>`
+`./tsp_solver.exe <test filenames>`
 
